@@ -700,7 +700,10 @@ nav {
         align-items: center !important;
     }
     #servicesAccordion {
-        width: 100%;
+        width: 95%;
+        min-height: 70vh;
+        height: 100%;
+        margin: auto;
         color: white;
         border-radius: 16px;
         --bs-accordion-bg: rgba(0, 0, 0, 0.3);
@@ -716,6 +719,9 @@ nav {
     .accordion-button:not(.collapsed) {
         border-color: transparent;
     }
+    .accordion-button.collapsed {
+        padding: 15% !important;
+    }
     .accordion-button:focus {
         outline: none !important;
         box-shadow: none !important;
@@ -725,6 +731,15 @@ nav {
     }
     .accordion-button:not(.collapsed)::after {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    }
+
+    .client-rows div {
+        height: 50%;
+        margin: auto;
+    }
+    .client-rows div img {
+        width: 100%;
+        height: 30%;
     }
 
     #career {
@@ -757,6 +772,7 @@ nav {
     }
 
     #backToTop {
+        width: 12%;
         right: 2%;
         scale: 0.8;
     }
